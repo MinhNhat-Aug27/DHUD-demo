@@ -30,7 +30,7 @@ function drawCanvas(v,c,bc,w,h) {
         var idata = bc.getImageData(0,0,w,h);
         var data = idata.data;
         // Loop through the pixels, turning them grayscale
-        gradient_internal(idata, [1, 2, 1]); // Apply Sobel operator
+        gradient_internal(idata, [1, 1, 1]); // Apply Prewitt operator
         //context.putImageData(pixels, 0, 0);
 
         idata.data = data;
